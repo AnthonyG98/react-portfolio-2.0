@@ -1,23 +1,21 @@
-import React from 'react'
-import JellyVideo from "../images/jellyfish.mp4"
+import React from "react";
 export default function Home() {
-       return (
-              <div className="home-container" id="home">
-                     <div className="video-container">
-                     <video autoPlay loop muted className="video">
-                     <source src={JellyVideo} type="video/mp4" />
-                     </video> 
-                     </div>
-                     <div className="home-info-container">
-                            <div className="home-text-container">
-                            <p id="hello">HELLO,</p>
-                            <p id="name">I'm Anthony G</p>
-                            <p id="dev">A Front-End Developer</p>
-                            </div>
-                     </div>
-                     <div className="arrow-container">
-                            <div className="arrow"></div>
-                     </div>
-              </div>
-       )
+  return (
+    <div class="home-container" id="home">
+      <div className="home-text-container">
+        <p className="hello">
+          Hell<p className="comma">o</p>
+        </p>
+        <p className="hello">
+          <br />
+          I'm Anthony{" "}
+          <p className="comma" id="g">
+            G.
+          </p>
+        </p>{" "}
+        <p className="frontend">A Front End Developer</p>
+      </div>
+      <div className="home-background"></div>
+    </div>
+  );
 }
