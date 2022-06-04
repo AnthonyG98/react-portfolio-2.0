@@ -8,29 +8,35 @@ import { Link, animateScroll as scroll } from "react-scroll";
 function App() {
   const openMobileLinks = () => {
     const linksContainer = document.getElementById("mobile-links");
-    linksContainer.style.top = "0vh";
+    linksContainer.style.left = "0%";
+    console.log(linksContainer);
     //     linksContainer.style.display = "flex";
   };
   const closeMobileLinks = () => {
     const linksContainer = document.getElementById("mobile-links");
-    linksContainer.style.top = "-50vh";
+    linksContainer.style.left = "100%";
     //     linksContainer.style.display = "none";
   };
   return (
     <>
-      {/* <div className="mobile-nav-container">
-        <div className="bar-container" onClick={openMobileLinks}>
+      <div className="mobile-nav-container" id="mobile-links">
+        <div
+          className="bar-container"
+          onClick={() => {
+            openMobileLinks();
+          }}
+        >
           <div className="bar" id="bar-one"></div>
           <div className="bar" id="bar-two"></div>
         </div>
-        <div className="mobile-links-container" id="mobile-links">
+        <div className="mobile-links-container">
           <Link
             className="link"
             to="home"
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={0}
             duration={500}
             onClick={closeMobileLinks}
           >
@@ -50,7 +56,7 @@ function App() {
           </Link>
           <Link
             className="link"
-            to="projects"
+            to="project"
             spy={true}
             smooth={true}
             offset={0}
@@ -72,8 +78,8 @@ function App() {
           >
             CONTACT ME
           </Link>
-        </div> */}
-      {/* </div> */}
+        </div>{" "}
+      </div>
       <div className="nav-container">
         <div className="links-container">
           <Link
@@ -102,7 +108,7 @@ function App() {
           </Link>
           <Link
             className="link"
-            to="projects"
+            to="project"
             spy={true}
             smooth={true}
             offset={0}
@@ -129,7 +135,12 @@ function App() {
       <Home id="home" />
       <About id="about" />
       <Projects id="projects" />
-      {/*<Contact id="contact" /> */}
+      <Contact id="contact" />
+      <div className="footer">
+        <p className="footer-text">
+          <i class="far fa-copyright"></i>All Rights Reserved Anthony G.
+        </p>
+      </div>
     </>
   );
 }

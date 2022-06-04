@@ -43,11 +43,6 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="footer">
-          <p className="footer-text">
-            <i class="far fa-copyright"></i>All Rights Reserved Anthony G.
-          </p>
-        </div>
       </div>
     </>
   );

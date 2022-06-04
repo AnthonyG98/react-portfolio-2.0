@@ -10,6 +10,22 @@ export default function Home() {
               Hey<p class="comma">,</p> I'm Anthony
             </p>
             <p class="home-bio-text">A Front-End Developer.</p>
+            <div className="icon-container">
+              <a
+                className="icon"
+                href="https://github.com/AnthonyG98"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                className="icon"
+                href="https://www.linkedin.com/in/anthony-gonzalez-76a9171b7/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
           </div>
         </div>
         <video autoPlay muted loop className="video">
