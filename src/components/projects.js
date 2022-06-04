@@ -46,10 +46,7 @@ export default function Projects() {
           </div>
           <div class="project" id="project-three">
             <div class="project-btn-container">
-              <a
-                href="https://admirable-nasturtium-b65094.netlify.app/"
-                className="project-btn"
-              >
+              <a href="https://postpoem.netlify.app/" className="project-btn">
                 View Live
               </a>
               <a

@@ -18,7 +18,7 @@ function App() {
   };
   return (
     <>
-      <div className="mobile-nav-container">
+      {/* <div className="mobile-nav-container">
         <div className="bar-container" onClick={openMobileLinks}>
           <div className="bar" id="bar-one"></div>
           <div className="bar" id="bar-two"></div>
@@ -34,7 +34,6 @@ function App() {
             duration={500}
             onClick={closeMobileLinks}
           >
-            {/* <i class="fas fa-home"></i> */}
             HOME
           </Link>
           <Link
@@ -47,7 +46,6 @@ function App() {
             duration={500}
             onClick={closeMobileLinks}
           >
-            {/* <i class="fas fa-user"></i> */}
             ABOUT
           </Link>
           <Link
@@ -60,7 +58,6 @@ function App() {
             duration={500}
             onClick={closeMobileLinks}
           >
-            {/* <i class="fas fa-folder"></i> */}
             PORTFOLIO
           </Link>
           <Link
@@ -73,11 +70,10 @@ function App() {
             duration={500}
             onClick={closeMobileLinks}
           >
-            {/* <i class="fas fa-envelope"></i> */}
             CONTACT ME
           </Link>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <div className="nav-container">
         <div className="links-container">
           <Link
@@ -130,52 +126,10 @@ function App() {
           </Link>
         </div>
       </div>
-      <div className="bubble-container">
-        <Link
-          to="home"
-          activeClass="active-bubble"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <div className="bubble"></div>
-        </Link>
-        <Link
-          to="about"
-          spy={true}
-          activeClass="active-bubble"
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <div className="bubble"></div>
-        </Link>
-        <Link
-          to="project"
-          spy={true}
-          smooth={true}
-          offset={0}
-          activeClass="active-bubble"
-          duration={500}
-        >
-          <div className="bubble"></div>
-        </Link>
-        <Link
-          to="contact"
-          activeClass="active-bubble"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <div className="bubble"></div>
-        </Link>
-      </div>
       <Home id="home" />
       <About id="about" />
       <Projects id="projects" />
-      <Contact id="contact" />
+      {/*<Contact id="contact" /> */}
     </>
   );
 }
